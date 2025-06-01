@@ -1,0 +1,188 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+body{
+     background-color: rgba(46, 33, 33, 0.954);
+     overflow-x:hidden ;
+}
+ header {
+    display:flex;
+    justify-content: space-between;
+    font-size:30px;
+    background-color: #565b69;
+    padding:20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+ 
+}
+ .search_reciepe{
+    font-size: 20px;
+    height:50px;
+    padding:10px;
+    margin:10px;
+    border:none;
+    outline:none;
+    background-color:  white;
+    opacity:0.5;
+      
+ }
+ form button{
+    font-size:25px;
+    height:50px;
+    width:100px;
+    border-radius:10px;
+    background-color: lavender;
+    box-shadow: 0 2px 4px;
+    
+ }
+ button:hover{
+    background-color: rgb(201, 88, 43);
+    transition: 0.1s ease-in-out
+ }
+ h3{
+    margin:20px;
+    font-size:25px;
+    text-align: center;
+    color:lavender;
+ }
+  .main_content{
+  text-align: center;
+ 
+   display: grid;
+   grid-template-columns: repeat(auto-fit,minmax(600px,1fr));
+   grid-gap:40px;
+   margin:10px;
+     border-radius: 10px;;
+   padding: 20px;
+  
+   color:lemonchiffon;
+   place-items: center;
+   
+  }
+
+  .main_content i{
+    font-size: 45px;
+    color:red;
+
+
+  }
+
+  /*RECIPE_DETAIL  */
+.recipe_detail{
+  display: none;
+  position:fixed;
+  top:50%;
+  left: 50%;
+  transform:translate(-50%,-50%);
+  width:40%;
+  padding: 20px;
+   
+  height:60%;
+  overflow: scroll;
+  font-size:20px;
+  background-color: rgb(201, 154, 93);
+  color:white;
+
+}
+.close-btn{
+  font-size:25px;
+  color:red;
+  
+   
+}
+.crossbtn{
+  text-align: right;
+   background: none;
+    border: none;
+    cursor: pointer;
+}
+.ceossbtn:hover{
+  font-size: 30px;
+}
+
+ul{
+  padding: 10px;
+   line-height: 30px;
+}
+  .reciepe{
+   background-color:black;
+   border-radius: 10px;
+   font-weight: bold;
+  }
+  span{
+   color:#b3c242
+  }
+  .reciepe:hover{
+   font-size:20px;
+   cursor:pointer;
+  }
+  .reciepe button{
+   background-color:rgb(245, 50, 11);
+   color:white;
+   font-size: 25px;
+   border-radius: 5px;
+   margin: 10px auto;
+   padding:10px;
+   cursor: pointer;
+  }
+  
+  header nav{
+   /* background-color: #111; */
+      color:khaki;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding-top: 100px;
+  }
+
+   h1 {
+      font-size: 48px;
+      display: inline-block;
+    }
+
+    
+      
+    h1 span {
+      display: inline-block;
+      opacity: 0;
+      transform: translateY(-50px);
+      animation: dropIn 2s normal 1s forwards 2;
+    }
+    
+     /* Animate drop from top */
+    @keyframes dropIn {
+      to {
+        opacity: 2;
+        transform: translateY(0);
+         
+      }
+      60%{
+        color:orangered;
+      }
+      90%{
+        color:rgb(255, 4, 205);
+      }
+    }
+
+    /* Delay each word */
+    h1 span:nth-child(1) { animation-delay: 0.4s; }
+    h1 span:nth-child(2) { animation-delay: 0.8ss; }
+    h1 span:nth-child(3) { animation-delay: 0.4s; }
+    h1 span:nth-child(4) { animation-delay: 0.6s; }
+    h1 span:nth-child(5) { animation-delay: 0.8s; }
+
+
+  /* header nav{ 
+   animation: reciepe  5s ease-in-out infinite normal ;
+  }
+   @keyframes reciepe {
+     0%   { color: #FF6E40; }   
+      25%  { color: #00E676; }  
+       50%  { color: #40C4FF; }  
+      75%  { color: #E040FB; }  
+      100% { color: #FF6E40; } 
+  }
+    */
